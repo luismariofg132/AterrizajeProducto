@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 234, 234);
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+#header{
+    position: fixed;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D;
+    width: 100vw;
+}
+
+#header-img{
+    width: 20vw;   
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #03989E;
+}
+
+ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+}
+
+#mochilas{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    width: 95vw;
+    margin: auto;
+}
+
+#donde{
+    max-width: 90vw;
+    margin: auto;
+}
+
+#images{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+}
+
+.imagen{
+    margin: auto;
+    background-color: #0D0D0D;
+    padding: 10px;
+    width: 25vw;
+    border-radius: 20px;
+}
+
+form{
+    background-color: #03989E;
+    width: 50vw;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 7px 8px 21px -5px rgba(0,0,0,0.67);
+}
+form p{
+    font-size: 24px;
+    margin: 0;
+}
+
+#como{
+    max-width: 90vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+input{
+    height: 30px;
+    width: 40vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 7px 8px 21px -5px rgba(0,0,0,0.67);
+}
+
+#submit{
+    background-color: #EE05F2;
+    color: white;
+    font-size: 20px;
+}
+
+#submit:hover{
+    background-color: #a700aa;
+}
+@media screen and (max-width: 800px){
+    #header{
+        min-height: 100px;
+        width: 100%;
+    }
+    #header-img{
+        width: 40vw;   
+    }
+    ul{
+        display: inline-block;
+    }
+    #mochilas{
+        width: 100%;
+        padding-top: 150px;
+    }
+    #video{
+        width: 450px;
+    }
+    #images{
+        display: block;
+    }
+    .imagen{
+        display: block;
+        width: 70vw;
+        margin-bottom: 20px;
+    }
+    form{
+        margin: auto;
+    }
+}
